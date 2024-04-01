@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>customer details</title>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" href="table1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h2>User Information</h2>
+
+        <div class="form-container">
+          <table id="tb1">
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" id="name" name="name" /></td>
+            </tr>
+            <tr>
+              <td><label for="dob">Date of Birth:</label></td>
+              <td><input type="date" id="dob" name="dob" /></td>
+            </tr>
+            <tr>
+              <td><label>Gender:</label></td>
+              <td>
+                <label
+                  ><input type="radio" name="gender" value="male" /> Male</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="female" />
+                  Female</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><label for="placeOfBirth">Place of Birth:</label></td>
+              <td>
+                <input type="text" id="placeOfBirth" name="placeOfBirth" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="address">Address:</label></td>
+              <td>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="4"
+                  cols="30"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+
+          <div class="subContainer">
+            <button onclick="saveUserData()">Save</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <h2>Saved User Information</h2>
+
+          <table id="userTable" border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Place of Birth</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- User data will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
