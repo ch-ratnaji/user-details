@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+  <form onsubmit='printFormValues()' action="/form-test/form.html">
+    <div class="formwrapper">
+      <div class="formContainer">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="personName" required minlength="2" maxlength="10">
+      </div>
+      <div class="formContainer">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+      </div>
+      <div class="formContainer">
+        <label for="city">city</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div class="formContainer">
+        <label for="Resident">Resident</label>
+        <input type="checkbox" id="Resident" name="isResident">
+      </div>
+      <div class="formContainer">
+        <label>Gender</label>
+
+        <input type="radio" id="maleCheck" name='gender'>
+        <label for="maleCheck">Male</label>
+
+        <input type="radio" id="femaleCheck" name='gender'>
+        <label for="femaleCheck">Female</label>
+      </div>
+      <button type="submit" value='Click to submit'>Click to Submit</button>
+    </div>
+
+  </form>
+
+
+
+  </div>
+
+  <script src="./form.js"></script>
+</body>
+
+</html>
